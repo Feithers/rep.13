@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: 'Karla', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(230, 239, 246);
+    padding: 10% 5%;
+}
+
+
+
+/*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*/
+/*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*/
+/*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*//*LAYOUT*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 70rem;
+    box-shadow: 1px 1px 30px rgba(148, 138, 138, 0.534);
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .section-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+/*------*//*------*//*------*//*------*//*------*//*------*//*------*//*------*//*------*//*------*//*------*/
+/*------*//*------*//*------*//*------*//*------*//*------*//*------*//*------*//*------*//*------*//*------*/
+
+
+
+
+
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+
+
+/*SECTION1*//*SECTION1*//*SECTION1*/
+/*SECTION1*//*SECTION1*//*SECTION1*/
+
+.section-1, .section-2, .section-3 {
+    background-color: white;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+.section-1 > h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.section-1 > h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2vh;
+}
+
+.section-1 > p {
+    color: rgb(202, 206, 215);
+    font-size: 1.6rem;
+    margin-top: 2vh;
+    line-height: 1.5;
+}
+
+
+/*SECTION2*//*SECTION2*//*SECTION2*/
+/*SECTION2*//*SECTION2*//*SECTION2*/
+
+.section-2 {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+
+.section-2 > h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.section-2 > .permonth > span {
+    font-weight: 700;
+    color: white;
+    font-size: 3rem;
+}
+
+.section-2 > .permonth {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.section-2 > p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.6rem;
+    margin-top: 2vh;
+}
+
+.section-2 > button {
+    background-color: hsl(71, 73%, 54%);
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 15px rgb(1, 150, 46);
+}
+
+
+/*SECTION3*//*SECTION3*//*SECTION3*//*SECTION3*/
+/*SECTION3*//*SECTION3*//*SECTION3*//*SECTION3*/
+
+.section-3 {
+    background-color: rgb(74, 190, 189);
+    color: white;
+}
+
+.section-3 > h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+ul {
+    margin-top: 2rem;
+}
+
+li {
+    list-style: none;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+}
